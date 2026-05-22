@@ -1,20 +1,22 @@
+import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import HomeScreen from './screens/HomeScreen';
+import AccelerometerScreen from './screens/AccelerometerScreen';
+import GyroscopeScreen from './screens/GyroscopeScreen';
+import DragonSlayerGame from './screens/DragonSlayerGame';
 
 export default function App() {
+  const [screen, setScreen] = useState('home');
+
+  const goHome = () => setScreen('home');
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <StatusBar style="light" />
+      {screen === 'home' && <HomeScreen onNavigate={setScreen} />}
+      {screen === 'accelerometer' && <AccelerometerScreen onBack={goHome} />}
+      {screen === 'gyroscope' && <GyroscopeScreen onBack={goHome} />}
+      {screen === 'game' && <DragonSlayerGame onBack={goHome} />}
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});

@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "start": "bunx expo start",
+    "android": "bunx expo start --android",
+    "ios": "bunx expo start --ios",
+    "web": "bunx expo start --web"
   },
   "dependencies": {
     "expo": "~55.0.25",
+    "expo-dev-client": "~55.0.35",
     "expo-sensors": "~55.0.15",
     "expo-status-bar": "~55.0.6",
     "react": "19.2.0",
