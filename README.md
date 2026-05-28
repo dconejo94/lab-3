@@ -44,7 +44,7 @@ lab-3/
 
 ```bash
 # Clonar el repositorio
-git clone <URL_DEL_REPOSITORIO>
+git clone (https://github.com/dconejo94/lab-3.git)
 cd lab-3/lab-3
 
 # Instalar dependencias
