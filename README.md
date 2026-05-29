@@ -1,4 +1,4 @@
-# Lab 3 — Sensores de Hardware con React Native (Expo SDK 55)
+# Lab 3 — Sensores de Hardware con React Native (Expo SDK 54)
 
 Aplicación móvil en React Native que integra **dos sensores del dispositivo** (acelerómetro y giroscopio) para visualizar datos en tiempo real y un mini-juego interactivo que utiliza ambos sensores.
 
@@ -58,6 +58,12 @@ bun install
 bunx expo start
 ```
 
+### Tests
+
+```bash
+bun run test
+```
+
 Escanear el código QR con Expo Go en tu dispositivo móvil.
 
 > **Importante:** Los sensores de hardware (acelerómetro y giroscopio) solo funcionan en dispositivos físicos, no en emuladores/simuladores.
@@ -74,9 +80,9 @@ Escanear el código QR con Expo Go en tu dispositivo móvil.
 
 ## Tecnologías
 
-- **React Native** 0.83.6
-- **Expo SDK** 55
-- **expo-sensors** ~55.0.15 (Accelerometer + Gyroscope)
+- **React Native** 0.81.5
+- **Expo SDK** 54
+- **expo-sensors** ~15.0.8 (Accelerometer + Gyroscope)
 - Navegación basada en estado (sin dependencias externas de navegación)
 
 ## Sensores integrados
